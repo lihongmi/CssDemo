@@ -1,0 +1,32 @@
+﻿div{
+	width:150px;
+	height:200px;
+	border:5px solid #ccc;
+	margin:10px auto;
+}
+/*
+background-size是css3提供的一个新特性，它可以让你随心所欲的控制背景图片的大小。
+background-size的类型
+background-size需要两个值，它的类型可以是像素（px）、百分比（%）或是auto，还可以是cover和contain。
+第一个值为背景图的width，另外一个值用于指定背景图上的height，如果只设定1个值，则第2个默认为auto，但当值为cover和contain时除外。
+
+cover：保持图像的宽高比例，将图片缩放到正好完全覆盖定义的背景区域，其中有一边和背景相同。
+contain：保持图像的宽高比例，将图片缩放到宽或者高正好适应定义背景的区域，但背景仍在定义的区域之内，被包含。
+
+*/
+#div1{
+	background:url(../images/rice.png) no-repeat;
+}
+#div2{
+	background:url(../images/rice.png) no-repeat;
+	background-size:cover;	
+}
+#div3{
+	background:url(../images/rice.png) no-repeat;
+	background-size:cover;
+    background-position:center;	
+}
+#div4{
+	background:url(../images/rice.png) no-repeat;
+	background-size:50px 100px;	
+}
